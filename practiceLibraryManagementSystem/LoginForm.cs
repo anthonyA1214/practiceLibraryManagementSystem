@@ -82,7 +82,7 @@ namespace practiceLibraryManagementSystem
             {
                 textBoxPassword.UseSystemPasswordChar = false;
                 textBoxPassword.Text = "Password";
-                textBoxPassword.ForeColor = Color.White;
+                textBoxPassword.ForeColor = Color.Silver;
             }
         }
 
@@ -117,13 +117,13 @@ namespace practiceLibraryManagementSystem
                     {
                         AdminForm adminForm = new AdminForm();
                         adminForm.Show();
-                        this.Close();
+                        this.Hide();
                     }
                     else
                     {
                         UserForm userForm = new UserForm();
                         userForm.Show();
-                        this.Close();
+                        this.Hide();
                     }
                 }
                 else
